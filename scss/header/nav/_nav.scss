@@ -9,9 +9,12 @@ nav {
   position: absolute;
   left: 10vw;
   top: 7vh;
+  text-transform: uppercase;
+  font-family: InterLight;
 
   & li {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
   }
 }
 

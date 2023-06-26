@@ -243,10 +243,11 @@ header {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   position: absolute;
   left: 10vw;
   top: 7vh;
+  font-family: InterSemiBold;
 }
 
 nav {
@@ -260,9 +261,12 @@ nav {
   position: absolute;
   left: 10vw;
   top: 7vh;
+  text-transform: uppercase;
+  font-family: InterLight;
 }
 .nav__links li {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
 }
 
 .nav__link {
@@ -271,4 +275,25 @@ nav {
 }
 .nav__link:hover {
   background-color: yellow;
+}
+
+html {
+  font-family: InterRegular;
+}
+
+@font-face {
+  font-family: InterRegular;
+  src: url(/fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: InterSemiBold;
+  src: url(/fonts/Inter-SemiBold.ttf);
+}
+@font-face {
+  font-family: InterThin;
+  src: url(/fonts/Inter-Thin.ttf);
+}
+@font-face {
+  font-family: InterLight;
+  src: url(/fonts/Inter-Light.ttf);
 }/*# sourceMappingURL=index.css.map */
