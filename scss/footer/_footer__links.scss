@@ -1,0 +1,41 @@
+.footer__links {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: white;
+
+  li {
+    margin-top: 2%;
+  }
+}
+.link__h3 {
+  font-size: 1.5rem;
+  width: 7vw;
+  line-height: 2;
+}
+
+.links__information {
+  position: absolute;
+  right: 0vw;
+  top: 2vh;
+  line-height: 2;
+}
+.links__about {
+  position: absolute;
+  left: 2vw;
+  top: 2vh;
+  line-height: 2;
+}
+.links__mission {
+  position: absolute;
+  left: 10vw;
+  top: 2vh;
+  line-height: 2;
+}
+.links__guides {
+  position: absolute;
+  left: 18vw;
+  top: 2vh;
+  line-height: 2;
+}
