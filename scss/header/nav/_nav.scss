@@ -26,3 +26,37 @@ nav {
     background-color: yellow;
   }
 }
+
+#search__bar {
+  width: 25%;
+  height: var(--search-bar-height);
+  border-radius: 1rem 0 0 1rem;
+  border: none;
+  position: absolute;
+  left: 40%;
+  top: 6vh;
+  display: flex;
+  border: none;
+  outline: none;
+  font-family: InterRegular;
+}
+
+#search__button {
+  position: absolute;
+  left: 62%;
+  top: 6vh;
+  width: 5vw;
+  height: var(--search-bar-height);
+  border-radius: 0 1rem 1rem 0;
+  border: none;
+  font-family: InterBold;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  background-color: #89b738;
+  color: white;
+
+  &:hover {
+    background-color: #a2cd59;
+    cursor: pointer;
+  }
+}
