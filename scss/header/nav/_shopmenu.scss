@@ -1,0 +1,16 @@
+#account {
+  background-color: rgb(93, 93, 6);
+}
+
+#cart {
+  background-color: rgb(12, 12, 86);
+}
+
+.cart__account {
+  background-color: rgb(185, 33, 185);
+  display: flex;
+  justify-content: right;
+  position: relative;
+  right: 20%;
+  top: 7vh;
+}
