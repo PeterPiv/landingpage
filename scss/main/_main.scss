@@ -1,0 +1,147 @@
+#hero__img {
+  display: flex;
+  margin: 1rem;
+
+  img {
+    width: 70%;
+    border-radius: 2rem;
+    margin: auto;
+  }
+}
+
+#populars {
+  color: #47823d;
+  margin-top: 5rem;
+  font-size: 2rem;
+  text-align: center;
+  font-family: InterBold;
+}
+
+.divide {
+  color: #285327;
+  border: 2px #285327 solid;
+  width: 60%;
+  border-radius: 1rem;
+}
+
+.grid__populars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "item-1 item-2"
+    "item-3 item-4";
+  gap: 1rem;
+}
+.item-1 {
+  grid-area: item-1;
+  justify-self: end;
+
+  img {
+    width: 600px;
+    border-radius: 2rem;
+  }
+}
+.item-2 {
+  grid-area: item-2;
+  justify-self: start;
+  img {
+    width: 600px;
+    border-radius: 2rem;
+  }
+}
+.item-3 {
+  grid-area: item-3;
+  justify-self: end;
+  align-self: end;
+
+  img {
+    width: 600px;
+    border-radius: 2rem;
+  }
+}
+.item-4 {
+  grid-area: item-4;
+  justify-self: start;
+  img {
+    width: 600px;
+    border-radius: 2rem;
+  }
+}
+
+#chooseus {
+  color: #47823d;
+  margin-top: 5rem;
+  font-size: 2rem;
+  text-align: center;
+  font-family: InterBold;
+
+  p {
+    font-size: 1.2rem;
+    font-family: InterRegular;
+  }
+}
+
+.grid__chooseus {
+  display: grid;
+  row-gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: (6, 1fr);
+  grid-template-areas:
+    "captive "
+    "expertise"
+    "selection";
+
+  p {
+    margin-top: 5%;
+    width: 50%;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    margin-left: 10%;
+  }
+}
+
+#chooseus__captive {
+  grid-area: captive;
+  margin-top: 1rem;
+  justify-self: end;
+  img {
+    width: 600px;
+    border-radius: 2rem;
+    position: relative;
+  }
+}
+#chooseus__expertise {
+  grid-area: expertise;
+  margin-top: 1rem;
+  grid-column: 2;
+  justify-self: start;
+
+  img {
+    width: 600px;
+    border-radius: 2rem;
+  }
+}
+#chooseus__selection {
+  grid-area: selection;
+  margin-top: 1rem;
+  justify-self: end;
+
+  img {
+    width: 600px;
+    border-radius: 2rem;
+  }
+}
+
+.bottom__text {
+  h3 {
+    position: relative;
+    right: 15%;
+    top: 5%;
+  }
+}
+
+.text__container {
+  position: relative;
+  left: 30%;
+}

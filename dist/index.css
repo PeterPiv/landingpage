@@ -135,7 +135,146 @@ table {
 
 body {
   background-color: #fff;
-  height: 100vh;
+}
+
+#hero__img {
+  display: flex;
+  margin: 1rem;
+}
+#hero__img img {
+  width: 70%;
+  border-radius: 2rem;
+  margin: auto;
+}
+
+#populars {
+  color: #47823d;
+  margin-top: 5rem;
+  font-size: 2rem;
+  text-align: center;
+  font-family: InterBold;
+}
+
+.divide {
+  color: #285327;
+  border: 2px #285327 solid;
+  width: 60%;
+  border-radius: 1rem;
+}
+
+.grid__populars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "item-1 item-2" "item-3 item-4";
+  gap: 1rem;
+}
+
+.item-1 {
+  grid-area: item-1;
+  justify-self: end;
+}
+.item-1 img {
+  width: 600px;
+  border-radius: 2rem;
+}
+
+.item-2 {
+  grid-area: item-2;
+  justify-self: start;
+}
+.item-2 img {
+  width: 600px;
+  border-radius: 2rem;
+}
+
+.item-3 {
+  grid-area: item-3;
+  justify-self: end;
+  align-self: end;
+}
+.item-3 img {
+  width: 600px;
+  border-radius: 2rem;
+}
+
+.item-4 {
+  grid-area: item-4;
+  justify-self: start;
+}
+.item-4 img {
+  width: 600px;
+  border-radius: 2rem;
+}
+
+#chooseus {
+  color: #47823d;
+  margin-top: 5rem;
+  font-size: 2rem;
+  text-align: center;
+  font-family: InterBold;
+}
+#chooseus p {
+  font-size: 1.2rem;
+  font-family: InterRegular;
+}
+
+.grid__chooseus {
+  display: grid;
+  row-gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 6, 1fr;
+  grid-template-areas: "captive " "expertise" "selection";
+}
+.grid__chooseus p {
+  margin-top: 5%;
+  width: 50%;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  margin-left: 10%;
+}
+
+#chooseus__captive {
+  grid-area: captive;
+  margin-top: 1rem;
+  justify-self: end;
+}
+#chooseus__captive img {
+  width: 600px;
+  border-radius: 2rem;
+  position: relative;
+}
+
+#chooseus__expertise {
+  grid-area: expertise;
+  margin-top: 1rem;
+  grid-column: 2;
+  justify-self: start;
+}
+#chooseus__expertise img {
+  width: 600px;
+  border-radius: 2rem;
+}
+
+#chooseus__selection {
+  grid-area: selection;
+  margin-top: 1rem;
+  justify-self: end;
+}
+#chooseus__selection img {
+  width: 600px;
+  border-radius: 2rem;
+}
+
+.bottom__text h3 {
+  position: relative;
+  right: 15%;
+  top: 5%;
+}
+
+.text__container {
+  position: relative;
+  left: 30%;
 }
 
 footer {
@@ -144,6 +283,7 @@ footer {
   background-color: #47823d;
   position: relative;
   top: 100%;
+  margin-top: 5%;
 }
 
 .line {
@@ -176,7 +316,6 @@ footer {
 }
 
 .footer__links {
-  background-color: white;
   position: absolute;
   top: 0;
   left: 50%;
@@ -237,7 +376,7 @@ footer {
 
 header {
   background-color: #47823d;
-  height: 200px;
+  height: 20svh;
   width: 100%;
   color: white;
 }
@@ -245,14 +384,14 @@ header {
 h1 {
   font-size: 2.5rem;
   position: absolute;
-  left: 10vw;
-  top: 7vh;
+  left: 10svw;
+  top: 7svh;
   font-family: InterSemiBold;
 }
 
 nav {
-  position: relative;
-  top: 50%;
+  position: absolute;
+  top: 10%;
 }
 
 .nav__links {
@@ -275,13 +414,13 @@ nav {
 }
 
 #search__bar {
-  width: 25%;
+  width: 100%;
   height: var(--search-bar-height);
   border-radius: 1rem 0 0 1rem;
   border: none;
   position: absolute;
-  left: 40%;
-  top: 6vh;
+  left: 40vw;
+  top: 5vh;
   display: flex;
   border: none;
   outline: none;
@@ -290,8 +429,8 @@ nav {
 
 #search__button {
   position: absolute;
-  left: 62%;
-  top: 6vh;
+  left: 55vw;
+  top: 5vh;
   width: 5vw;
   height: var(--search-bar-height);
   border-radius: 0 1rem 1rem 0;
@@ -319,7 +458,7 @@ nav {
   text-transform: uppercase;
 }
 #cart img {
-  max-height: 50px;
+  max-height: 40px;
   margin-right: 15px;
 }
 
@@ -327,17 +466,17 @@ nav {
   padding: 2rem;
 }
 #account img {
-  max-height: 50px;
+  max-height: 40px;
 }
 
 #cart__icon {
   position: relative;
-  top: 2vh;
+  top: 1.5vh;
 }
 
 #account__icon {
   position: relative;
-  top: 2vh;
+  top: 1.5vh;
   left: 0.7vw;
 }
 
@@ -368,4 +507,24 @@ html {
 @font-face {
   font-family: InterBold;
   src: url(/fonts/Inter-Bold.ttf);
+}
+@media screen and (max-width: 300px) {
+  .customerinfo {
+    background-color: #fff;
+    width: 300px;
+    height: 100px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgb(38, 38, 38);
+    display: block;
+    position: relative;
+    left: 25%;
+    top: 8%;
+  }
+  .customerinfo p {
+    margin: 12px 32px;
+    text-align: justify;
+  }
+  .info {
+    padding-top: 0.5px;
+  }
 }/*# sourceMappingURL=index.css.map */
