@@ -1,23 +1,32 @@
-@media screen and (max-width: 300px) {
-  // customer info
-  .customerinfo {
-    background-color: #fff;
-    width: 300px;
-    height: 100px;
-    border-radius: 15px;
-    box-shadow: 3px 3px 5px rgb(38, 38, 38);
-    display: block;
-    position: relative;
-    left: 25%;
-    top: 8%;
-
-    p {
-      margin: 12px 32px;
-      text-align: justify;
+@media screen and (max-width: 360px) {
+  header {
+    display: none;
+    nav {
+    }
+  }
+  main {
+    #hero__img {
+      background-color: yellow;
+    }
+    section {
+      display: none;
     }
   }
 
-  .info {
-    padding-top: 0.5px;
+  footer {
+    .footer__links {
+      display: none;
+    }
+    .customerinfo {
+      display: none;
+    }
+    .footer__bottom {
+      position: relative;
+      top: 75%;
+      width: 90%;
+    }
+    .privacy__policy {
+      margin: 5px 5px;
+    }
   }
 }
