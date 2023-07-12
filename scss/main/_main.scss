@@ -21,7 +21,7 @@ main {
   #grid__populars {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr);
+    grid-template-rows: 1fr;
     gap: 1.3rem;
 
     img {
@@ -36,7 +36,7 @@ main {
 #grid__choose {
   display: grid;
   grid-template-columns: 2fr;
-  grid-template-rows: repeat(1fr);
+  grid-template-rows: 1fr;
   gap: 1.3rem;
 
   img {

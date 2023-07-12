@@ -36,7 +36,7 @@ footer {
   width: 80%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(1fr);
+  grid-template-rows: 1fr;
   gap: 2rem;
 
   grid-template-areas:
