@@ -1,0 +1,39 @@
+#dropdown__menu {
+  background-color: #386431;
+  width: 100%;
+  padding: 1rem 0;
+
+  li {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 5px 0;
+    color: white;
+    font-size: larger;
+    width: 30%;
+
+    &:hover {
+      color: yellow;
+      transition: 0.1s ease-in;
+      cursor: pointer;
+    }
+  }
+}
+.search__bar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  input {
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+  }
+
+  // button {
+  //   border-radius: 0 1rem 1rem 0;
+  //   border: none;
+  //   position: relative;
+  //   left: -10%;
+  // }
+}

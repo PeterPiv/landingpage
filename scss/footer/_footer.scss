@@ -1,8 +1,42 @@
 footer {
-  width: 100%;
-  height: 30svh;
   background-color: #47823d;
+  margin-top: 4rem;
+  height: 50vh;
+}
+
+.service__infobox {
+  background-color: white;
+  box-shadow: 4px 4px 10px rgb(41, 41, 41);
+  border-radius: 1rem;
+  width: 75%;
+  padding: 0.7rem 0.5rem;
+  margin: auto;
   position: relative;
-  top: 100%;
-  margin-top: 5%;
+  top: 2rem;
+
+  p {
+    margin: 0.3rem 2rem;
+  }
+}
+
+.footer__links {
+  color: white;
+  margin-top: 2rem;
+  letter-spacing: 1.2px;
+  h4 {
+    font-size: 1.3rem;
+  }
+}
+
+#grid__footer {
+  margin: 4rem auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1fr);
+  gap: 2rem;
+
+  grid-template-areas:
+    "item-1 item-2"
+    "item-3 item-4";
 }

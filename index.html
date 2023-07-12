@@ -7,159 +7,137 @@
     <title>Jungle Bazaar</title>
   </head>
   <body>
-    <header>
-      <h1>Jungle Bazaar</h1>
-      <nav>
-        <ul class="nav__links">
-          <li><a href="" class="nav__link animals__link">Animals</a></li>
-          <li><a href="" class="nav__link tanks__link">Tanks</a></li>
-          <li><a href="" class="nav__link plants__link">Plants</a></li>
-          <li><a href="" class="nav__link care__link">Care</a></li>
-        </ul>
-        <form action="">
-          <input type="search" placeholder="Search" id="search__bar" />
-          <button id="search__button">GO</button>
-        </form>
-        <span id="cart">
+    <div class="container">
+      <header>
+        <h1>Jungle Bazaar</h1>
+        <div class="nav"></div>
+        <div id="hamburger__menu">
+          <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="15" rx="6"></rect>
+            <rect y="32" width="100" height="15" rx="6"></rect>
+            <rect y="62" width="100" height="15" rx="6"></rect>
+          </svg>
+        </div>
+        <div id="menu">
           <a href="/">
-            <img id="cart__icon" src="pictures/shopping-cart.png" alt="" />
-            cart
+            <img
+              id="shopping__cart"
+              src="pictures/shopping-cart(1).png"
+              alt=""
+            />
           </a>
-          <span id="account">
-            <a href="/">
-              <img id="account__icon" src="pictures/accountv1.png" alt="" />
-              account
+          <a href="/">
+            <img id="account__img" src="pictures/accountv1.png" alt="" />
+          </a>
+        </div>
+      </header>
+      <ul id="dropdown__menu">
+        <form action="/">
+          <div class="search__bar">
+            <input type="text" />
+            <button>SEARCH</button>
+          </div>
+        </form>
+        <li>Frogs</li>
+        <li>Reptiles</li>
+        <li>Aquatics</li>
+        <li>Plants</li>
+        <li>Tanks</li>
+        <li>Care</li>
+        <li>Feeders</li>
+      </ul>
+      <main>
+        <div id="hero__img">
+          <a href=""> </a>
+        </div>
+        <div id="grid__populars">
+          <img src="pictures/iguana sale v2.png" alt="" />
+          <h2>Popular Categories</h2>
+          <div class="line"></div>
+          <div id="item__1">
+            <a href=""><img src="pictures/frogs card.png" alt="" /></a>
+          </div>
+          <div id="item__2">
+            <a href="">
+              <img src="pictures/reptiles card.png" alt="" />
             </a>
-          </span>
-        </span>
-      </nav>
-      <!-- <div id="dropdown-animals" class="hidden">
-        <ul class="downdown__items">
-          <li id="dropdown-animals-amphibians">Amphibians</li>
-          <li id="dropdown-animals-reptiles">Reptiles</li>
-          <li id="dropdown-animals-fish">Fish & Aquatics</li>
-          <li id="dropdown-animals-spiders">Spiders</li>
-          <li id="dropdown-animals-insects">Insects</li>
-        </ul>
-      </div>
-      <div id="dropdown-tanks"></div>
-      <div id="dropdown-plants"></div>
-      <div id="dropdown-care"></div> -->
-    </header>
-    <main>
-      <div id="hero__img">
-        <img src="pictures/iguana sale v2.png" alt="" />
-      </div>
-      <section id="populars">
-        Popular Categories
-        <hr class="divide" />
-        <div class="grid__populars">
-          <div class="item-1">
-            <img src="pictures/frogs card.png" alt="" />
           </div>
-          <div class="item-2">
-            <img src="pictures/fish card.png" alt="" />
+          <div id="item__3">
+            <a href="">
+              <img src="pictures/plants card.png" alt="" />
+            </a>
           </div>
-          <div class="item-3">
-            <img src="pictures/reptiles card.png" alt="" />
-          </div>
-          <div class="item-4">
-            <img src="pictures/plants card.png" alt="" />
+          <div id="item__4">
+            <a href="">
+              <img src="pictures/fish card.png" alt="" />
+            </a>
           </div>
         </div>
-      </section>
-      <section id="chooseus">
-        Why choose us?
-        <hr class="divide" />
-        <div class="grid__chooseus">
-          <div id="chooseus__captive">
-            <img src="pictures/captive bred.png" alt="" />
-          </div>
-          <div class="bottom__text">
-            <h3>Captive Bred Animals</h3>
-            <p id="text__captive">
+        <div id="grid__choose">
+          <h2>Why choose us?</h2>
+          <div class="line"></div>
+          <div id="item-1">
+            <h3>captive bred animals</h3>
+            <a href="/"> <img src="pictures/captive bred.png" alt="" /></a>
+            <p>
               At our company, we are committed to providing you with the best
-              selection of pets. We take pride in ensuring that every animal we
-              offer is captive bred rather than wild caught. This means that our
-              pets have been bred and raised in controlled environments,
-              ensuring their health, well-being, and the preservation of natural
-              ecosystems. By choosing us, you can be confident that you are
-              supporting ethical practices and contributing to the conservation
-              of these fascinating species.
+              selection of pets.
+            </p>
+            <p>
+              We take pride in ensuring that every animal we offer is captive
+              bred rather than wild caught.
             </p>
           </div>
-          <div id="chooseus__expertise">
-            <img src="pictures/expertise.png" alt="" />
+          <h3>Expertise and Knowledge</h3>
+          <div id="item-2">
+            <a href="/"> <img src="pictures/expertise.png" alt="" /></a>
+            <p>
+              Our team consists of passionate pet enthusiasts who possess
+              extensive expertise and knowledge in caring for animals.
+            </p>
           </div>
-          <div class="bottom__text">
-            <div class="text__container">
-              <h3 id="expertise__h3">Expertise and Knowledge</h3>
-              <p id="text__expertise">
-                Our team consists of passionate pet enthusiasts who possess
-                extensive expertise and knowledge in caring for animals. We are
-                dedicated to sharing our expertise with you, providing valuable
-                advice, guidance, and support throughout your journey as a pet
-                owner. With our help, you can confidently navigate the world of
-                exotic pets and create a thriving environment for your beloved
-                companions.
-              </p>
-            </div>
-          </div>
-          <div id="chooseus__selection">
-            <img src="pictures/selection.png" alt="" />
-          </div>
-          <div class="bottom__text">
-            <h3>Wide Selection and Quality Assurance</h3>
-            <p id="text__selection">
+          <h3>Wide Selection and Quality Assurance</h3>
+          <div id="item-3">
+            <a href="/"> <img src="pictures/selection.png" alt="" /></a>
+            <p>
               We offer a diverse range of carefully curated pets, plants,
               aquariums, and terrariums to suit the preferences and needs of
-              every enthusiast. Our commitment to quality assurance means that
-              we meticulously select and inspect every item we offer, ensuring
-              that you receive healthy and top-notch products. Whether you're a
-              beginner or an experienced hobbyist, we have everything you need
-              to create stunning habitats and establish a rewarding connection
-              with your pets.
+              every enthusiast.
             </p>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="customerinfo">
-        <div class="info">
+      </main>
+      <footer>
+        <div class="service__infobox">
           <p>Customer Service:</p>
-          <p>+1 603-751-8066</p>
+          <p>+1 111-111-1111</p>
           <p>Weekdays 9am - 5pm</p>
         </div>
-      </div>
-      <div class="footer__links">
-        <ul class="links__information">
-          <h3 class="link__h3">Information</h3>
-          <li>Delivery</li>
-          <li>Returns</li>
-          <li>Our Stores</li>
-        </ul>
-        <ul class="links__about">
-          <h3 class="link__h3">About Us</h3>
-          <li>Contact Us</li>
-          <li>Partners</li>
-          <li>Join Us</li>
-        </ul>
-        <ul class="links__mission">
-          <h3 class="link__h3">Our Mission</h3>
-          <li>Teaching</li>
-          <li>Conservation</li>
-        </ul>
-        <ul class="links__guides">
-          <h3 class="link__h3">Guides</h3>
-          <li>How-to Guides</li>
-        </ul>
-      </div>
-      <div class="footer__bottom">
-        <hr class="line" />
-        <div class="copyright">Jungle Bazaar © 2014 - 2023</div>
-        <div class="privacy__policy">Privacy Policy</div>
-      </div>
-    </footer>
+        <div id="grid__footer">
+          <div class="footer__links" id="footer__info">
+            <h4>Information</h4>
+            <p>Delivery</p>
+            <p>Returns</p>
+            <p>Our Stores</p>
+          </div>
+          <div class="footer__links" id="about__us">
+            <h4>About Us</h4>
+            <p>Contact Us</p>
+            <p>Partners</p>
+            <p>Join Us</p>
+          </div>
+          <div class="footer__links" id="our__mission">
+            <h4>Our Mission</h4>
+            <p>Education</p>
+            <p>Conservation</p>
+          </div>
+          <div class="footer__links" id="guides">
+            <h4>Guides</h4>
+            <p>How to guides</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>

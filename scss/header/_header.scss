@@ -1,14 +1,52 @@
 header {
   background-color: #47823d;
-  height: 20svh;
+  height: 200px;
   width: 100%;
-  color: white;
 }
 
 h1 {
+  position: relative;
+  top: 2rem;
+  text-align: center;
   font-size: 2.5rem;
-  position: absolute;
-  left: 10svw;
-  top: 7svh;
-  font-family: InterSemiBold;
+  font-family: Inter-SemiBold;
+  font-weight: 900;
+  color: white;
+}
+
+#hamburger__menu {
+  position: relative;
+  top: 5rem;
+  left: 15%;
+  max-width: 40px;
+  max-height: 40px;
+  padding: 0.3rem;
+  box-shadow: 0 0 0 2px #618620;
+  border-radius: 0.5rem;
+  background-color: #89b738;
+  z-index: 2;
+
+  &:hover {
+    background-color: #b9ff40;
+    transition: 0.3s ease-in;
+  }
+}
+
+#menu {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  top: 2rem;
+  gap: 2rem;
+  margin: 0 2rem;
+}
+
+#shopping__cart {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+#account__img {
+  max-width: 40px;
+  max-height: 40px;
 }
