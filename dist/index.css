@@ -153,7 +153,6 @@ body {
   font-family: Inter-Regular, sans-serif;
   letter-spacing: 0.5px;
   color: #080b18;
-  background-color: white;
   line-height: 1.2;
   letter-spacing: 0.05rem;
   font-size: 1rem;
@@ -330,9 +329,21 @@ footer {
 }
 .footer__links h4 {
   font-size: 1.3rem;
+  width: 110%;
 }
 .footer__links:nth-child(3) {
   margin-bottom: 4rem;
+}
+.footer__links p {
+  text-align: left;
+  margin-left: 5px;
+  margin: 3px;
+  letter-spacing: 1px;
+}
+.footer__links p:hover {
+  color: yellow;
+  transition: 0.3s ease-in;
+  cursor: pointer;
 }
 
 #grid__footer {

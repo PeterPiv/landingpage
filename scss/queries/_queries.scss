@@ -1,0 +1,19 @@
+// smaller screens will use default sizes
+
+// medium
+// @media screen and (min-width: 600px) {
+//   body {
+//     background-color: beige;
+//   }
+// }
+
+// @media screen and (min-width: 700px) {
+//   .line {
+//     width: 300px;
+//     background-color: blue;
+//   }
+// }
+
+@mixin colorful {
+  background-color: rgb(65, 65, 21);
+}
